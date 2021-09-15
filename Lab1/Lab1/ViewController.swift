@@ -44,6 +44,8 @@ class ViewController: UIViewController {
     @IBAction func resetCounter(_ sender: Any) {
         count = 0
         setLabel(val: 0)
+        step=1
+        stepButton.setTitle("Step = 2", for:.normal)
     }
     
     func setLabel(val:Int)
