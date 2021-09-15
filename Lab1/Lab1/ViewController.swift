@@ -9,11 +9,57 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var counterLabel: UILabel!
+    
+    @IBOutlet weak var stepButton: UIButton!
+    var count:Int = 0
+    var step:Int = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func decreaseCount(_ sender: Any) {
+        count-=step
+        setLabel(val:count)
+    }
+    
+    @IBAction func increaseCount(_ sender: Any) {
+        count+=step
+        setLabel(val:count)
+    }
+    @IBAction func changeStep(_ sender: Any) {
+        if step == 1
+        {
+            step = 2
+            stepButton.setTitle("Step = 2",for:.normal)
+        }
+        else
+        {
+            step = 1
+            stepButton.setTitle("Step = 1", for: .normal)
+        }
+    }
+    @IBAction func resetCounter(_ sender: Any) {
+        setLabel(val: 0)
+    }
+    
+    func setLabel(val:Int)
+    {
+        counterLabel.text = String(val)
+        if(val<0)
+        {
+            counterLabel.textColor = UIColor.systemRed
+        }
+        else if(val==0)
+        {
+            counterLabel.textColor = UIColor.black
+        }
+        else
+        {
+            counterLabel.textColor = UIColor.systemBlue
+        }
+    }
 }
 

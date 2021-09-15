@@ -43,6 +43,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="increaseCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYw-SY-1GB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSx-nb-g3E">
                                 <rect key="frame" x="50" y="528" width="120" height="50"/>
@@ -55,6 +58,9 @@
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AW6-Cs-uBK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-65-lW1">
                                 <rect key="frame" x="244" y="528" width="120" height="50"/>
@@ -67,6 +73,9 @@
                                 <state key="normal" title="Step = 2">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4m-p5-vEE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcD-Gr-n2d">
                                 <rect key="frame" x="50" y="428" width="120" height="50"/>
@@ -79,6 +88,9 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="decreaseCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8VQ-3O-wBj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -100,6 +112,10 @@
                             <constraint firstItem="wmB-NK-e9l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="zCD-oN-SNo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="wmB-NK-e9l" id="MZi-u4-TkC"/>
+                        <outlet property="stepButton" destination="y6U-65-lW1" id="ha6-6f-daw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
