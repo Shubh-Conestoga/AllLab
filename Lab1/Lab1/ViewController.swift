@@ -33,15 +33,16 @@ class ViewController: UIViewController {
         if step == 1
         {
             step = 2
-            stepButton.setTitle("Step = 2",for:.normal)
+            stepButton.setTitle("Step = 1",for:.normal)
         }
         else
         {
             step = 1
-            stepButton.setTitle("Step = 1", for: .normal)
+            stepButton.setTitle("Step = 2", for: .normal)
         }
     }
     @IBAction func resetCounter(_ sender: Any) {
+        count = 0
         setLabel(val: 0)
     }
     
