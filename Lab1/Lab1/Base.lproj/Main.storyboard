@@ -48,8 +48,7 @@
                                 <rect key="frame" x="50" y="474" width="120" height="50"/>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.67843137254901964" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="7Fw-f5-mBk"/>
-                                    <constraint firstAttribute="height" constant="50" id="fpZ-7W-tiV"/>
+                                    <constraint firstAttribute="height" constant="50" id="acx-gc-aVA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Reset">
@@ -57,21 +56,6 @@
                                 </state>
                                 <connections>
                                     <action selector="resetCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AW6-Cs-uBK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-65-lW1">
-                                <rect key="frame" x="244" y="474" width="120" height="50"/>
-                                <color key="backgroundColor" red="0.93333333333333335" green="0.47843137254901957" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="J88-2l-phD"/>
-                                    <constraint firstAttribute="width" constant="120" id="rqc-3j-VC2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Step = 2">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4m-p5-vEE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcD-Gr-n2d">
@@ -89,19 +73,38 @@
                                     <action selector="decreaseCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8VQ-3O-wBj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-65-lW1">
+                                <rect key="frame" x="255" y="474" width="109" height="50"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.47843137254901957" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J88-2l-phD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Step = 2">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4m-p5-vEE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.89803921568627454" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WPf-vZ-FEK" secondAttribute="trailing" constant="80" id="5YC-Pz-fTG"/>
                             <constraint firstItem="VSx-nb-g3E" firstAttribute="top" secondItem="kcD-Gr-n2d" secondAttribute="bottom" constant="50" id="B1d-F5-V6c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y6U-65-lW1" secondAttribute="trailing" constant="50" id="BOQ-iG-E8S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y6U-65-lW1" secondAttribute="bottom" constant="338" id="EeV-rF-ad8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y6U-65-lW1" secondAttribute="trailing" constant="50" id="Hbn-qQ-SI0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LTO-zb-KS7" secondAttribute="trailing" constant="50" id="Ihb-c1-rYi"/>
                             <constraint firstItem="y6U-65-lW1" firstAttribute="top" secondItem="LTO-zb-KS7" secondAttribute="bottom" constant="50" id="Jsp-hD-Ypz"/>
                             <constraint firstItem="LTO-zb-KS7" firstAttribute="top" secondItem="wmB-NK-e9l" secondAttribute="bottom" constant="90" id="LVr-xG-3Ua"/>
                             <constraint firstItem="kcD-Gr-n2d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="PiS-ny-063"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VSx-nb-g3E" secondAttribute="bottom" constant="338" id="Set-ka-OFs"/>
+                            <constraint firstItem="y6U-65-lW1" firstAttribute="leading" secondItem="VSx-nb-g3E" secondAttribute="trailing" constant="85" id="UrQ-cj-XQK"/>
                             <constraint firstItem="kcD-Gr-n2d" firstAttribute="top" secondItem="wmB-NK-e9l" secondAttribute="bottom" constant="90" id="aBx-O2-l3K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y6U-65-lW1" secondAttribute="trailing" constant="50" id="de7-I7-lnx"/>
                             <constraint firstItem="WPf-vZ-FEK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="g1a-Wr-dLJ"/>
+                            <constraint firstItem="VSx-nb-g3E" firstAttribute="width" secondItem="y6U-65-lW1" secondAttribute="width" multiplier="0.678899" constant="46" id="r3r-Tc-sCK"/>
                             <constraint firstItem="wmB-NK-e9l" firstAttribute="top" secondItem="WPf-vZ-FEK" secondAttribute="bottom" constant="50" id="s5j-s8-Cga"/>
                             <constraint firstItem="WPf-vZ-FEK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="sNz-fT-uEi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wmB-NK-e9l" secondAttribute="trailing" constant="100" id="vIZ-ih-Pbf"/>
@@ -116,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-183" y="50"/>
+            <point key="canvasLocation" x="-184.05797101449278" y="49.553571428571423"/>
         </scene>
     </scenes>
     <resources>

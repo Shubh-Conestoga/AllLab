@@ -51,18 +51,6 @@ class ViewController: UIViewController {
     func setLabel(val:Int)
     {
         counterLabel.text = String(val)
-        if(val<0)
-        {
-            counterLabel.textColor = UIColor.systemRed
-        }
-        else if(val==0)
-        {
-            counterLabel.textColor = UIColor.black
-        }
-        else
-        {
-            counterLabel.textColor = UIColor.systemBlue
-        }
     }
 }
 
